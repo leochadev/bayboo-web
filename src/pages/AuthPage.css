@@ -120,6 +120,30 @@ body:has(.auth-page) #root {
   opacity: 0.58;
 }
 
+.auth-language {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+  color: #16443f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-language span {
+  color: rgba(22, 68, 63, 0.68);
+}
+
+.auth-language a {
+  color: #16443f;
+  text-decoration: none;
+}
+
+.auth-language a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .auth-page {
     padding: 22px 14px;

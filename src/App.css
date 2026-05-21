@@ -28,8 +28,17 @@ body:has(.home-page) #root {
   box-shadow: 0 22px 48px rgba(20, 92, 85, 0.24);
 }
 
+.home-eyebrow {
+  margin: 24px 0 0;
+  color: #194a44;
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
 .home-title {
-  margin: 28px 0 10px;
+  margin: 10px 0;
   color: #fffaf0;
   font-size: 46px;
   line-height: 1.05;
@@ -63,6 +72,32 @@ body:has(.home-page) #root {
 }
 
 .home-links a:hover {
+  text-decoration: underline;
+}
+
+.home-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: rgba(255, 250, 240, 0.38);
+  color: #16443f;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.home-language span {
+  color: rgba(22, 68, 63, 0.72);
+}
+
+.home-language a {
+  color: #16443f;
+  text-decoration: none;
+}
+
+.home-language a:hover {
   text-decoration: underline;
 }
 
