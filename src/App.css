@@ -56,11 +56,61 @@ body:has(.home-page) #root {
   font-weight: 600;
 }
 
+.store-downloads {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-width: 148px;
+  height: 46px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 250, 240, 0.42);
+  border-radius: 8px;
+  background: #101615;
+  color: #fffaf0;
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 14px 28px rgba(20, 92, 85, 0.22);
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.store-badge:hover {
+  background: #1d2927;
+  box-shadow: 0 18px 34px rgba(20, 92, 85, 0.28);
+  transform: translateY(-1px);
+}
+
+.store-badge:focus-visible {
+  outline: 3px solid rgba(255, 250, 240, 0.8);
+  outline-offset: 3px;
+}
+
+.store-badge-icon {
+  width: 22px;
+  height: 22px;
+  flex: 0 0 auto;
+  fill: currentColor;
+}
+
 .home-links {
   display: flex;
   justify-content: center;
   gap: 14px;
-  margin-top: 28px;
+  margin-top: 24px;
   flex-wrap: wrap;
 }
 
@@ -110,5 +160,17 @@ body:has(.home-page) #root {
 
   .home-title {
     font-size: 38px;
+  }
+
+  .store-downloads {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .store-badge {
+    min-width: 138px;
+    height: 44px;
+    padding: 0 14px;
+    font-size: 14px;
   }
 }
