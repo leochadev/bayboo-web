@@ -6,11 +6,6 @@ dist/
 build/
 .vite/
 
-# Environment variables
-.env
-.env.*
-!.env.example
-
 # Logs
 logs/
 *.log
