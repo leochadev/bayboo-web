@@ -24,9 +24,6 @@ const homeContent = {
     playStore: 'Google Play',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service',
-    currentLabel: 'English',
-    otherLabel: '한국어',
-    otherPath: '/ko',
   },
   ko: {
     eyebrow: 'Bayboo AI',
@@ -36,9 +33,6 @@ const homeContent = {
     playStore: 'Google Play',
     privacy: '개인정보처리방침',
     terms: '이용약관',
-    currentLabel: '한국어',
-    otherLabel: 'English',
-    otherPath: '/',
   },
 }
 
@@ -88,10 +82,6 @@ function App({ language }: AppProps) {
           <Link to={language === 'ko' ? '/terms/ko' : '/terms'}>
             {content.terms}
           </Link>
-        </nav>
-        <nav className="home-language" aria-label="Language">
-          <span>{content.currentLabel}</span>
-          <Link to={content.otherPath}>{content.otherLabel}</Link>
         </nav>
       </section>
     </main>

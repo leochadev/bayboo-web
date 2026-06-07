@@ -1,6 +1,5 @@
 import type { FormEvent } from 'react'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import baybooLogo from '../assets/bayboo-logo.png'
 import { supabase } from '../lib/supabase'
 import './AuthPage.css'
@@ -22,9 +21,6 @@ const resetCopy = {
     confirmLabel: 'Confirm password',
     submit: 'Change password',
     submitting: 'Changing...',
-    currentLabel: 'English',
-    otherLabel: '한국어',
-    otherPath: '/reset-password/ko',
   },
   ko: {
     title: '비밀번호 변경',
@@ -38,9 +34,6 @@ const resetCopy = {
     confirmLabel: '비밀번호 확인',
     submit: '비밀번호 변경',
     submitting: '변경 중...',
-    currentLabel: '한국어',
-    otherLabel: 'English',
-    otherPath: '/reset-password',
   },
 }
 
@@ -56,9 +49,6 @@ export default function ResetPasswordPage({ language }: ResetPasswordPageProps) 
   const [submitting, setSubmitting] = useState(false)
 
   useEffect(() => {
-    setMessage(copy.checking)
-    setStatus('checking')
-
     const init = async () => {
       const { data, error } = await supabase.auth.getSession()
 
@@ -149,10 +139,6 @@ export default function ResetPasswordPage({ language }: ResetPasswordPageProps) 
           </form>
         )}
 
-        <nav className="auth-language" aria-label="Language">
-          <span>{copy.currentLabel}</span>
-          <Link to={copy.otherPath}>{copy.otherLabel}</Link>
-        </nav>
       </section>
     </main>
   )

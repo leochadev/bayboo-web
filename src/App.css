@@ -125,32 +125,6 @@ body:has(.home-page) #root {
   text-decoration: underline;
 }
 
-.home-language {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 18px;
-  padding: 7px 10px;
-  border-radius: 999px;
-  background: rgba(255, 250, 240, 0.38);
-  color: #16443f;
-  font-size: 13px;
-  font-weight: 700;
-}
-
-.home-language span {
-  color: rgba(22, 68, 63, 0.72);
-}
-
-.home-language a {
-  color: #16443f;
-  text-decoration: none;
-}
-
-.home-language a:hover {
-  text-decoration: underline;
-}
-
 @media (max-width: 480px) {
   .home-logo {
     width: 140px;
