@@ -5,24 +5,28 @@ import App from './App'
 import AuthCallbackPage from './pages/AuthCallbackPage'
 import LegalDocumentPage from './pages/LegalDocumentPage'
 import ResetPasswordPage from './pages/ResetPasswordPage'
+import privacyEn from './legal/privacy.en.md?raw'
+import privacyKo from './legal/privacy.ko.md?raw'
+import termsEn from './legal/terms.en.md?raw'
+import termsKo from './legal/terms.ko.md?raw'
 import './index.css'
 
 const legalDocuments = {
   privacyKo: {
     title: '개인정보처리방침',
-    src: 'https://diamond-ash-1d5.notion.site/ebd//13a9cb56dc39488d9414ffd8dc904f8a',
+    markdown: privacyKo,
   },
   privacyEn: {
     title: 'Privacy Policy',
-    src: 'https://diamond-ash-1d5.notion.site/ebd//7f82750ed52e434b80422e2e42d4de05',
+    markdown: privacyEn,
   },
   termsKo: {
     title: '이용약관',
-    src: 'https://diamond-ash-1d5.notion.site/ebd//594235187fd6470481eece7dd6a58a6b',
+    markdown: termsKo,
   },
   termsEn: {
     title: 'Terms of Service',
-    src: 'https://diamond-ash-1d5.notion.site/ebd//4317813141044b2092989c358a0b4652',
+    markdown: termsEn,
   },
 }
 
